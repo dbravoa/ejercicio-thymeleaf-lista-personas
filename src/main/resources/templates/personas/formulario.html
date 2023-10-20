@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+</head>
+
+<body>
+    <form th:action="@{/personas/guardar}" method="POST">
+        <label>
+            ID:
+            <input type="number" name="id">
+        </label>
+        <label>
+            Nombre:
+            <input type="text" name="nombre">
+        </label>
+        <label>
+            Apellido:
+            <input type="text" name="apellido">
+        </label>
+        <input type="submit" value="Guardar">
+    </form>
+</body>
+
+</html>
